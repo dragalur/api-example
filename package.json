@@ -1,0 +1,30 @@
+{
+    "name": "testnode",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "start:dev": "node build/app.js",
+        "build": "tsc && cp -r ./temp ./build/temp",
+        "build:prod": "tsc --project ./tsconfig.production.json && cp -r ./temp ./build/temp",
+        "install:prod": "npm install --only=prod"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.25.0"
+    },
+    "devDependencies": {
+        "@types/node": "^16.10.3",
+        "@typescript-eslint/eslint-plugin": "^4.31.0",
+        "@typescript-eslint/parser": "^4.31.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "prettier": "^2.3.2",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.7.3"
+    }
+}
